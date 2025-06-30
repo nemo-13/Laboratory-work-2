@@ -1,13 +1,14 @@
 package ork;
 
 import com.github.javafaker.Faker;
+import gear.*;
 
 public class OrkBuilder {
     private String name;
     private String tribe;
-    private String weapon;
-    private String armor;
-    private String banner;
+    private Weapon weapon;
+    private Armor armor;
+    private Banner banner;
     private int strength;
     private int agility;
     private int intellect;
@@ -26,21 +27,21 @@ public class OrkBuilder {
         return this;
     }
 
-    public OrkBuilder withWeapon(String weapon) {
+    public OrkBuilder withWeapon(Weapon weapon) {
         this.weapon = weapon;
         return this;
     }
 
-    public OrkBuilder withArmor(String armor) {
+    public OrkBuilder withArmor(Armor armor) {
         this.armor = armor;
         return this;
     }
 
-    public OrkBuilder withBanner(String banner) {
+    public OrkBuilder withBanner(Banner banner) {
         this.banner = banner;
         return this;
     }
-
+    
     public OrkBuilder withType(OrkType type) {
         this.type = type;
         return this;

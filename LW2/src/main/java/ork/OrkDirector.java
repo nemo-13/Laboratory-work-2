@@ -1,5 +1,7 @@
 package ork;
 
+import gear.*;
+
 public class OrkDirector {
     public Ork createOrk(OrkBuilder builder, OrkType type) {
         switch (type) {
@@ -25,7 +27,7 @@ public class OrkDirector {
         return builder
                 .withName()
                 .withType(OrkType.LEADER)
-                .withBanner("Horn Banner")
+                .withBanner(new CustomBanner())
                 .build();
     }
 
@@ -33,8 +35,8 @@ public class OrkDirector {
         return builder
                 .withName()
                 .withType(OrkType.SCOUT)
-                .withWeapon("Bow")
-                .withArmor("Light Cloak")
+                .withWeapon(new CustomWeapon())
+                .withArmor(new CustomArmor())
                 .build();
     }
 }

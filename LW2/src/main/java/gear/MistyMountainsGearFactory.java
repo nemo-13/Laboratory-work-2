@@ -2,17 +2,17 @@ package gear;
 
 public class MistyMountainsGearFactory implements OrcGearFactory {
     @Override
-    public String createWeapon() {
-        return "Axe";
+    public Weapon createWeapon() {
+        return new MistyMountainsWeapon();
     }
 
     @Override
-    public String createArmor() {
-        return "Leather Armor";
+    public Armor createArmor() {
+        return new MistyMountainsArmor();
     }
 
     @Override
-    public String createBanner() {
-        return "Moon Banner";
+    public Banner createBanner() {
+        return new MistyMountainsBanner();
     }
 }

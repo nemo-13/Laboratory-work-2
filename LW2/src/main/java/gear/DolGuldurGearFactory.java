@@ -2,17 +2,17 @@ package gear;
 
 public class DolGuldurGearFactory implements OrcGearFactory {
     @Override
-    public String createWeapon() {
-        return "Spear";
+    public Weapon createWeapon() {
+        return new DolGuldurWeapon();
     }
 
     @Override
-    public String createArmor() {
-        return "Chainmail";
+    public Armor createArmor() {
+        return new DolGuldurArmor();
     }
 
     @Override
-    public String createBanner() {
-        return "Spider Banner";
+    public Banner createBanner() {
+        return new DolGuldurBanner();
     }
 }

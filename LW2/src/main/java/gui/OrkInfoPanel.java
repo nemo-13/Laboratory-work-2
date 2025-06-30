@@ -52,9 +52,9 @@ public class OrkInfoPanel extends JPanel {
         nameField.setText(ork.getName());
         tribeField.setText(ork.getTribe());
         typeField.setText(ork.getType().toString());
-        weaponField.setText(ork.getWeapon());
-        armorField.setText(ork.getArmor());
-        bannerField.setText(ork.getBanner());
+        weaponField.setText(ork.getWeapon().toString());
+        armorField.setText(ork.getArmor().toString());
+        bannerField.setText(ork.getBanner().toString());
         strengthField.setText(String.valueOf(ork.getStrength()));
         agilityField.setText(String.valueOf(ork.getAgility()));
         intellectField.setText(String.valueOf(ork.getIntellect()));

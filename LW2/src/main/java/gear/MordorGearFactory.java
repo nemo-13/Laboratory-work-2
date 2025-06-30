@@ -2,17 +2,17 @@ package gear;
 
 public class MordorGearFactory implements OrcGearFactory {
     @Override
-    public String createWeapon() {
-        return "Heavy Sword";
+    public Weapon createWeapon() {
+        return new MordorWeapon();
     }
 
     @Override
-    public String createArmor() {
-        return "Steel Armor";
+    public Armor createArmor() {
+        return new MordorArmor();
     }
 
     @Override
-    public String createBanner() {
-        return "Red Eye Banner";
+    public Banner createBanner() {
+        return new MordorBanner();
     }
 }

@@ -1,10 +1,12 @@
 package ork;
 
+import gear.*; 
+
 public class Ork {
     private String name;
-    private String weapon;
-    private String armor;
-    private String banner;
+    private Weapon weapon;
+    private Armor armor;
+    private Banner banner;
     private int strength;
     private int agility;
     private int intellect;
@@ -12,7 +14,7 @@ public class Ork {
     private String tribe;
     private OrkType type;
 
-    public Ork(String name, String weapon, String armor, String banner,
+    public Ork(String name, Weapon weapon, Armor armor, Banner banner,
                int strength, int agility, int intellect, int health,
                String tribe, OrkType type) {
         this.name = name;
@@ -28,9 +30,9 @@ public class Ork {
     }
 
     public String getName() { return name; }
-    public String getWeapon() { return weapon; }
-    public String getArmor() { return armor; }
-    public String getBanner() { return banner; }
+    public Weapon getWeapon() { return weapon; }
+    public Armor getArmor() { return armor; }
+    public Banner getBanner() { return banner; }
     public int getStrength() { return strength; }
     public int getAgility() { return agility; }
     public int getIntellect() { return intellect; }
